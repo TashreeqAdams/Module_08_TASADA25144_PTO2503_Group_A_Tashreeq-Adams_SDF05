@@ -12,42 +12,52 @@
   </head>
   <body>
     <footer
-      class="bg-[#659f8f] dark:bg-[#313131] font-sans pt-[100px] pb-[100px]"
+      class="bg-[#659f8f] dark:bg-[#313131] font-sans pt-[50px] pb-[50px] sm: pt-[0px] pb-[0px] [@media(max-width:375px)"
     >
       <div class="m-auto w-[80%]">
-        <div class="flex flex-row">
+        <div
+          class="flex flex-col gap-[50px] sm:flex md:gap-0 lg:flex-row lg:gap-[50px] w-full lg:h-[150px]"
+        >
           <div
-            class="w-[50%] h-[150px] text-[17px] pb-[20px] text-[rgb(53,49,49)]"
+            class="sm:w-full md:pb-[0px] md:h-[120px] lg:h-[220px] lg:w-[100%] h-[150px] text-[17px] pb-[20px] text-[rgb(53,49,49)]"
           >
-            <h3 class="text-[22px] pb-[15px] font-bold font-sans mt-[20px]">
+            <h3
+              class="text-[20px] pb-[22px] font-bold font-sans mt-[20px] w-full"
+            >
               Subscribe to our newsletter for updates.
             </h3>
-            <div class="flex">
+            <div
+              class="flex max-[375px]:flex-col max-[375px]:gap-[10px] max-[375px]:box-border"
+            >
               <input
-                class="h-[40px] w-[190px] rounded-[5px] border-none pl-[15px] pt-[2px] pb-[2px] mr-[8px] font-sans box-border text-[13px]"
+                class="sm:h-[40px] w-[100%] rounded-[5px] border-none pl-[15px] pt-[2px] pb-[2px] mr-[8px] font-sans box-border text-[13px] md:box-border rounded-[5px] border-none h-[40px] md:w-[200px] lg:box-border w-[300px]"
                 type="text"
                 placeholder="Email Address"
               />
               <button
-                class="rounded-[5px] h-[40px] w-[120px] bg-[#d86943] border-none text-white font-sans font-bold box-border text-[13px]"
+                class="w-full rounded-[5px] box-border md:w-[100px] lg:rounded-[5px] h-[40px] w-[120px] bg-[#d86943] border-none text-white font-sans font-bold box-border text-[13px]"
               >
                 Subscribe
               </button>
             </div>
           </div>
-          <div class="flex justify-evenly w-[50%]">
+          <div
+            class="flex justify-between w-[100%] md:justify-normal max-[375px]:flex-col"
+          >
             <div
-              class="w-[25%] h-[150px] text-[15px] pb-[20px] text-[rgb(53,49,49)]"
+              class="w-full md:w-[50%] lg:w-[100%] h-[150px] text-[15px] pb-[20px] text-[rgb(53,49,49)]"
             >
               <h4 class="pb-[15px] pt-[22px] font-bold">Quick Link</h4>
-              <ul class="text-[15px] leading-[30px] text-[rgb(53,49,49)]">
+              <ul
+                class="pb-[0px] lg:text-[15px] leading-[30px] text-[rgb(53,49,49)] w-full"
+              >
                 <li>Home</li>
                 <li>Who are we?</li>
                 <li>Our Philosophy</li>
               </ul>
             </div>
             <div
-              class="w-[25%] h-[150px] text-[15px] pb-[20px] text-[rgb(53,49,49)]"
+              class="w-full md:w-[50%] lg:w-[100%] h-[150px] text-[15px] pb-[20px] text-[rgb(53,49,49)]"
             >
               <h4 class="pb-[15px] pt-[22px] font-bold">Technologies</h4>
               <ul class="text-[15px] leading-[30px] text-[rgb(53,49,49)]">
